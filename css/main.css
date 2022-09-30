@@ -1,0 +1,18 @@
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+.gnb li {
+  list-style-type: none;
+  color: black;
+}
+
+.gnb li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main img {
+  width: 700px;
+  height: auto;
+}
