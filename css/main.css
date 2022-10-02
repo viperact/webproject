@@ -1,18 +1,222 @@
-.logo a {
-  text-decoration: none;
-  color: black;
+html,
+body {
+  margin: 0px;
+  padding: 0px;
 }
+
+body {
+  color: #333;
+}
+
+/* =============================== */
+
+.ibx {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.pbx {
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* ================================ */
+
+.top {
+  position: relative;
+  height: 100px;
+  z-index: 999;
+  background-color: none;
+}
+
+.top1 {
+  width: 200px;
+  /* background-color: blue; */
+}
+
+.top2 {
+  width: 1000px;
+  /* background-color: yellow; */
+}
+
+.gnb {
+  width: 800px;
+  height: 50px;
+  /* background-color: rgb(117, 188, 255); */
+  margin-top: 40px;
+  margin-left: 190px;
+}
+
 .gnb li {
-  list-style-type: none;
-  color: black;
+  position: relative;
+  width: 200px;
+  /* border: 1px solid black; */
 }
 
-.gnb li a {
+/* 슬라이드의 뒷배경 */
+.gnb a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
+.gnb ol {
+  height: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.gnb::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(218, 238, 255, 0.9);
+  transition: height 0.4s;
+}
+
+.gnb:hover ol,
+.gnb:hover::before {
+  height: 170px;
+}
+
+.gnb ol a {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.gnb li:hover a {
+  color: red;
+}
+
+.gnb ol li:hover a {
+  background-color: yellowgreen;
+}
+
+.top1 logo {
+  position: fixed;
+  margin-top: 20px;
+}
+
+.top1 img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #333;
   text-decoration: none;
-  color: black;
 }
 
-.main img {
-  width: 700px;
-  height: auto;
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  float: left;
+}
+
+/* ================================== */
+
+.ban {
+  height: 300px;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+}
+
+/* ================================== */
+
+.cont > .pbx {
+  /* background-color: yellow; */
+  width: 400px;
+}
+
+.tm {
+  /* background-color: aqua; */
+  width: 200px;
+  height: 40px;
+}
+
+.tm li a {
+  display: block;
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+  /* background-color: red; */
+}
+
+.tm li.on a {
+  background-color: blue;
+  color: aqua;
+  font-weight: bold;
+}
+
+.tc {
+  height: 140px;
+  /* background-color: yellow; */
+}
+
+.tc > li {
+  /* background-color: violet; */
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.tc > li.on {
+  display: block;
+}
+
+.gong {
+  padding-top: 9px;
+  /* background-color: green; */
+  padding-left: 7px;
+}
+
+.gong li {
+  line-height: 24px;
+}
+
+.gong a {
+  display: inline-block;
+  width: 270px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.gong span {
+  float: right;
+  padding-right: 5px;
+  font-weight: bold;
+}
+
+.news {
+  line-height: 30px;
+}
+
+.news a {
+  display: inline-block;
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
 }

@@ -6,60 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/mais.js"></script>
   </head>
+
   <body>
-    <div id="wrap">
-      <div class="header">
-        <div class="wrap">
-          <h1 class="logo"><a href="#">로고</a></h1>
-          <div class="gnb">
-            <ul>
+    <header class="ibx top">
+      <div class="pbx top1">
+        <h1 class="logo">
+          <a href="#">
+            <img src="img/logo.png" alt="로고" />
+          </a>
+        </h1>
+      </div>
+      <div class="pbx top2">
+        <ul class="gnb">
+          <li>
+            <a href="#">거래소</a>
+            <ol>
+              <li><a href="#">거래</a></li>
+              <li><a href="#">거래, 주문현황</a></li>
+              <li><a href="#">투자유의 지정안내</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">상품 / 서비스</a>
+            <ol>
+              <li><a href="#">오토 트레이딩</a></li>
+              <li><a href="#">빗썸 드롭스</a></li>
+              <li><a href="#">수수료 쿠폰</a></li>
+              <li><a href="#">로그인 도용방지</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">제휴 / 입점</a>
+            <ol>
+              <li><a href="#">렌딩</a></li>
+              <li><a href="#">예치</a></li>
+              <li><a href="#">자동매매(봇)</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">고객센터</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="ibx ban">
+      <ul class="slide">
+        <li class="aa">
+          <a href="#">
+            <img src="img/iloveimg-resized (1)/coin1.jpg" alt="코인1" />
+          </a>
+        </li>
+        <li class="bb">
+          <a href="#">
+            <img src="img/iloveimg-resized (1)/coin2.jpg" alt="코인2" />
+          </a>
+        </li>
+        <li class="cc">
+          <a href="#">
+            <img src="img/iloveimg-resized (1)/coin3.jpg" alt="코인3 " />
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <main class="ibx cont">
+      <div class="pbx">
+        <ol class="tm">
+          <li class="on" onclick="chgTab(0,1)">
+            <a href="#">공지사항</a>
+          </li>
+          <li onclick="chgTab(1,0)">
+            <a href="#">증권뉴스</a>
+          </li>
+        </ol>
+
+        <ol class="tc">
+          <li class="on">
+            <ul class="gong">
               <li>
-                <a href="#">1</a>
-                <ol>
-                  <li>sub1</li>
-                  <li>sub2</li>
-                  <li>sub3</li>
-                  <li>sub4</li>
-                </ol>
+                <a href="#" onclick="popup('block')">
+                  [중요] 업비트 서비스 로그인 방식 추가 및 변경 예정 안내 :
+                  업비트 로그인 (10/31 ~)
+                </a>
+                <span>2022. 10. 03</span>
               </li>
               <li>
-                <a href="#">2</a>
-                <ol>
-                  <li>sub1</li>
-                  <li>sub2</li>
-                  <li>sub3</li>
-                  <li>sub4</li>
-                </ol>
+                <a href="#">
+                  [안내] BitGo와의 계약 종료에 따른 복구 지원 중단 안내
+                </a>
+                <span>2022. 10. 02</span>
               </li>
               <li>
-                <a href="#">3</a>
-                <ol>
-                  <li>sub1</li>
-                  <li>sub2</li>
-                  <li>sub3</li>
-                  <li>sub4</li>
-                </ol>
+                <a href="#"> [공지] 가상자산 거래에 관한 위험 고지 </a>
+                <span>2022. 10. 02</span>
               </li>
               <li>
-                <a href="#">4</a>
-                <ol>
-                  <li>sub1</li>
-                  <li>sub2</li>
-                  <li>sub3</li>
-                  <li>sub4</li>
-                </ol>
+                <a href="#">
+                  [중요] 특정금융정보법에 따른 미신고 가상자산사업자와의 입출금
+                  제한 및 유의사항
+                </a>
+                <span>2022. 10. 01</span>
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
+          </li>
 
-      <div>
-        <div class="main">
-          <img src="img/act.jpg" alt="서핑" />
-        </div>
+          <li>
+            <ul class="news">
+              <li>
+                <a href="#"
+                  >[뉴스] 전 세계 블록체인 개발자 부산으로 모인다…’UDC 2022’
+                  22일 개막</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >[뉴스] 두나무, NFT 수익금 기부로 숲 가꾸기 캠페인 앞장</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >[뉴스] 두나무, ‘루나 거래 수수료’ 239BTC 투자자 보호에
+                  활용</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ol>
       </div>
-    </div>
+    </main>
   </body>
 </html>
