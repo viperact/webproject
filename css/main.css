@@ -22,6 +22,39 @@ body {
   padding: 10px;
 }
 
+.pbx2 {
+  float: left;
+  width: 400px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.pbx3 {
+  float: left;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.large_text {
+  font-size: 75px;
+}
+
+.small_text {
+  font-size: 20px;
+}
+
+.colon {
+  font-size: 55px;
+  vertical-align: text-bottom;
+}
+
 /* ================================ */
 
 .top {
@@ -219,4 +252,62 @@ li {
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: bold;
+}
+
+.coin2 {
+  padding-top: 9px;
+}
+
+.coin2 li {
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.coin a {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.coin2 a {
+  display: inline-block;
+  width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.coin2 span {
+  float: right;
+  padding-right: 5px;
+  color: red;
+}
+
+.info1 {
+  width: 200px;
+}
+
+.info2 {
+  width: 600px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.info2 ul {
+  margin-left: 50px;
+  float: left;
+  width: 400px;
+}
+
+.info2 ul li {
+  line-height: 30px;
+}
+
+.info3 {
+  width: 400px;
+}
+
+.info3 a {
+  padding: 20px;
+  text-align: center;
+  line-height: 107px;
 }
